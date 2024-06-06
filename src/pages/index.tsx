@@ -102,8 +102,8 @@ const switchingColorsBack = () => {
                 <JavaTag />
                 <PythonTag />
               </div>
-              <p>Height Limit Mod is a Minecraft Mod for Hypixel BedWars and SkyWars that shows the build limits for each map</p>
-              <p>The mod has been implamented by popular clients like Lunar Client</p>
+              <p>Height Limit Mod is a Minecraft Mod for Hypixel BedWars and SkyWars that shows the build limits for each map.</p>
+              <p>The mod has been implemented by popular clients like Lunar Client</p>
             </div>
             <div className={styles.card} data-blobity={true} data-blobity-magnetic={false} onMouseEnter={() => switchingColors()} onMouseLeave={() => switchingColorsBack()} >
               <h1>Apex Utils</h1>
@@ -124,8 +124,7 @@ const switchingColorsBack = () => {
                 <ReactNativeTag />
                 <DiscontinuedTag />
               </div>
-              <p>Boopulu was a mobile app for Iphone and Android with the main focus being a chat app with no send button, every charachter you wrote would be automatically sent to
-                the other person
+              <p>Boopulu was a mobile app for iPhone and Android with the main focus being a chat app with no send button, every character you wrote would be automatically sent to the other person
               </p>
             </div>
           </div>
