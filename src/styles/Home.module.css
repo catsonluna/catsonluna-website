@@ -1,0 +1,202 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 4rem 1rem;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 5rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  text-align: center;
+  
+}
+
+.title:hover {
+  background: linear-gradient(to right,#5BCEFA, #F5A9B8, #FFF, #F5A9B8, #5BCEFA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sometimes {
+  display: flex;
+  transition: 0.1s ease-in-out;
+  animation: 0.1s ease-in-out 0s infinite alternate none running bold;
+}
+
+/* when subtitle gets hovered, make the sometimes bold and 3rem with an animation*/
+.subtitle:hover
+.sometimes {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+
+.section_title {
+  font-size: 4rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.cards {
+  /* make the gird go horizontal for 3*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(243, 243, 243, 0.6);
+  z-index: 1000;
+  max-width: 25vw;
+}
+
+.card h1{
+  font-size: 2rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.card p{
+  font-size: 1rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.card a{
+  display: inline;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.embla {
+  overflow: hidden;
+  width: 99vw;
+  margin-top: 1rem;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 20%; /* Display 3 slides at a time */
+  min-width: 0;
+  background-color: #fff;
+  margin: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 .6rem rgba(243, 243, 243, 0.6);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    gap: 0;
+    margin: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section_title {
+    font-size: 3rem;
+  }
+
+  .card {
+    max-width: 90vw;
+  }
+
+  .card h1{
+    text-align: center;
+  }
+
+  .card p{
+    text-align: center;
+  }
+
+  .tags{
+    justify-content: center;
+  }
+
+  .embla__slide {
+    flex: 0 0 90%; /* Display 1 slide at a time */
+  }
+
+  .socials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
