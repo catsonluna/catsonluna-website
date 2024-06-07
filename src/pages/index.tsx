@@ -83,6 +83,12 @@ const switchingColorsBack = () => {
         <title>luna</title>
         <meta name="description" content="catsonluna :3" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icon.png"/>
+        <meta name="author" content="catsonluna" />
+        <meta property="og:title" content="catsonluna" />
+        <meta property="og:description" content="there might be cats on the moon" />
+        <meta property="og:image" content="/icon.png" />
+        <meta property="og:url" content="https://catsonluna.com" />
       </Head>
 
       <main className={styles.main}>
