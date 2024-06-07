@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.10.1",
+    "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.11",
     "blobity": "^0.2.3",
     "embla-carousel-autoplay": "^8.1.3",
