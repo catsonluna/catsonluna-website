@@ -127,3 +127,15 @@
     background-color: #2d3748;
     color: #fff;
 }
+
+.unreal {
+    /*use the unreal color for background*/
+    background-color: #313131;
+    color: #fff;
+}
+
+.comingsoon {
+    /*use the comingsoon color for background*/
+    background-color: #ff8c00;
+    color: #fff;
+}

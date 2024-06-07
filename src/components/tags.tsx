@@ -72,3 +72,19 @@ export function TauriTag() {
     </div>
   );
 }
+
+export function UnrealTag() {
+  return (
+    <div className={`${styles.tag} ${styles.unreal}`}>
+      Unreal Engine
+    </div>
+  );
+}
+
+export function ComingSoonTag() {
+  return (
+    <div className={`${styles.tag} ${styles.comingsoon}`}>
+      Coming Soon
+    </div>
+  );
+}

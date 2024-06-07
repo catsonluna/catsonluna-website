@@ -78,13 +78,17 @@
 }
 
 .cards {
-  /* make the gird go horizontal for 3*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 100%;
   padding: 1rem;
 }
+
+.cards :nth-child(4) {
+  grid-column: 2;
+}
+
 
 .card {
   display: flex;
@@ -169,6 +173,10 @@
 
   .cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards :nth-child(4) {
+    grid-column: 1;
   }
 
   .section_title {

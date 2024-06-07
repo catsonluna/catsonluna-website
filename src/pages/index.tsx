@@ -5,7 +5,7 @@ import tagStyles from "@/styles/Tags.module.css";
 import { useEffect, useRef, useState } from "react";
 import useBlobity from "blobity/lib/react/useBlobity";
 
-import { DiscontinuedTag, GoTag, JavaTag, NextJsTag, PythonTag, ReactNativeTag, RustTag, TauriTag, TypeScriptTag } from "@/components/tags";
+import { ComingSoonTag, DiscontinuedTag, GoTag, JavaTag, NextJsTag, PythonTag, ReactNativeTag, RustTag, TauriTag, TypeScriptTag, UnrealTag } from "@/components/tags";
 import { DiscordLink, EmailLink, GithubLink, TwitterLink } from "@/components/social";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from 'embla-carousel-autoplay'
@@ -127,6 +127,15 @@ const switchingColorsBack = () => {
               <p>Boopulu was a mobile app for iPhone and Android with the main focus being a chat app with no send button, every character you wrote would be automatically sent to the other person
               </p>
             </div>
+            <div className={styles.card} data-blobity={true} data-blobity-magnetic={false} onMouseEnter={() => switchingColors()} onMouseLeave={() => switchingColorsBack()}>
+              <h1>???</h1>
+              <div className={styles.tags}>
+                <UnrealTag />
+                <ComingSoonTag />
+              </div>
+              <p>weee woooooo woiiieeeeee
+              </p>
+            </div>
           </div>
         </div>
         <div id="technologies">
@@ -156,6 +165,7 @@ const switchingColorsBack = () => {
               <div className={`${styles.embla__slide} ${tagStyles.postgresql}`}>PostgreSQL</div>
               <div className={`${styles.embla__slide} ${tagStyles.mongodb}`}>MongoDB</div>
               <div className={`${styles.embla__slide} ${tagStyles.redis}`}>Redis</div>
+              <div className={`${styles.embla__slide} ${tagStyles.unreal}`}>Unreal Engine</div>
           </div>
           </div>
           </div>
