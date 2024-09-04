@@ -133,15 +133,6 @@ const switchingColorsBack = () => {
               <p>Boopulu was a mobile app for iPhone and Android with the main focus being a chat app with no send button, every character you wrote would be automatically sent to the other person
               </p>
             </div>
-            <div className={styles.card} data-blobity={true} data-blobity-magnetic={false} onMouseEnter={() => switchingColors()} onMouseLeave={() => switchingColorsBack()}>
-              <h1>???</h1>
-              <div className={styles.tags}>
-                <UnrealTag />
-                <ComingSoonTag />
-              </div>
-              <p>weee woooooo woiiieeeeee
-              </p>
-            </div>
           </div>
         </div>
         <div id="technologies">
