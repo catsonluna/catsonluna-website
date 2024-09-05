@@ -96,7 +96,7 @@ const switchingColorsBack = () => {
               zIndex: 1000,
             }}>
           <div>
-            <h1 data-blobity className={styles.title}>cats on luna</h1>
+            <h1 data-blobity className={styles.title}>cats on the moon</h1>
             <p data-blobity-magnetic={false} data-blobity className={styles.subtitle}>I make things <span className={styles.sometimes}>sometimes</span></p>
           </div>
         <div id="projects">
