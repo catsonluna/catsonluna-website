@@ -171,7 +171,6 @@ const switchingColorsBack = () => {
             <div className={styles.socials}>
               <EmailLink link="catsonluna@gmail.com" size={60}/>
               <GithubLink link="https://github.com/catsonluna" size={60} />
-              <TwitterLink link="https://twitter.com/@catsonluna" size={60} />
               <DiscordLink link="https://discord.com/invite/Fykpshg" size={60}/>
             </div>
           </div>
