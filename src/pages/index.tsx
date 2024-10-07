@@ -119,7 +119,7 @@ const switchingColorsBack = () => {
                 <TauriTag />
                 <NextJsTag />
               </div>
-              <p>Apex Utils is a private application commissioned by the head analyst of Cloud9’s Apex Legends Division.</p>
+              <p>Apex Utils is a private application commissioned by the head coach of Cloud9’s Apex Legends Division.</p>
               <p>It was used throughout the international Playoffs event in Los Angeles to reach 6th place globally.</p>
             </div>
             <div className={styles.card} data-blobity={true} data-blobity-magnetic={false} onMouseEnter={() => switchingColors()} onMouseLeave={() => switchingColorsBack()}>
