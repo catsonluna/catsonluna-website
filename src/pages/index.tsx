@@ -26,6 +26,7 @@ import {
   EmailLink,
   GithubLink,
   LiquipediaLink,
+  StatusQuoLink,
   TemprLink,
   TwitterLink,
 } from "@/components/social";
@@ -426,6 +427,20 @@ export default function Home() {
                 <p>
                   Currently working with Tempr, going to the ALGS Open Lan in
                   New Orleans.
+                </p>
+              </div>
+              <div
+                className={styles.card}
+                data-blobity={true}
+                data-blobity-magnetic={false}
+                onMouseEnter={() => switchingColors()}
+                onMouseLeave={() => switchingColorsBack()}
+              >
+                <h1>
+                  Status Quo <StatusQuoLink link="https://statusquo.gg/" />
+                </h1>
+                <p>
+                  Worked with Status Quo during ALGS Year 5 PSQ's, achiving 8th in week 1 finals
                 </p>
               </div>
             </div>

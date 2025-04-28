@@ -73,3 +73,11 @@ export function ApexUtilsIcon({ link, size = 30 }: { link: string, size?: number
         </a>
     );
 }
+
+export function StatusQuoLink({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/sq.png" alt="statusquo" width={size} height={size} />
+        </a>
+    );
+}
