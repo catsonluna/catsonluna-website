@@ -139,3 +139,21 @@
     background-color: #ff8c00;
     color: #fff;
 }
+
+.cloud9 {
+    /*use the cloud9 color for background*/
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.currentteam {
+    /*use the currentteam color for background*/
+    background-color: #45ab5f;
+    color: #fff;
+}
+
+.qwik {
+    /*use the qwik color for background*/
+    background-color: #00b4ab;
+    color: #fff;
+}

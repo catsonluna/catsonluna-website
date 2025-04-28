@@ -88,3 +88,19 @@ export function ComingSoonTag() {
     </div>
   );
 }
+
+export function CurrentTeamTag() {
+  return (
+    <div className={`${styles.tag} ${styles.currentteam}`}>
+      Current Team
+    </div>
+  );
+}
+
+export function QwikTag() {
+  return (
+    <div className={`${styles.tag} ${styles.qwik}`}>
+      Qwik
+    </div>
+  );
+}

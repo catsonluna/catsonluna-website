@@ -33,3 +33,43 @@ export function EmailLink({ link, size = 30 }: { link: string, size?: number}) {
         </a>
     );
 }
+
+export function ApexUtilsLink({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/apexutils.png" alt="apexutils" width={size} height={size} />
+        </a>
+    );
+}
+
+export function LiquipediaLink({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/liquipedia.png" alt="liquipedia" width={size} height={size} />
+        </a>
+    );
+}
+
+export function Cloud9Link({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/cloud9.svg" alt="cloud9" width={size} height={size} />
+        </a>
+    );
+}
+
+export function TemprLink({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/tempr-b.png" alt="tempr" width={size} height={size} />
+        </a>
+    );
+}
+
+export function ApexUtilsIcon({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/apex-utils-icon.png" alt="apexutils" width={size} height={size} />
+        </a>
+    );
+}
