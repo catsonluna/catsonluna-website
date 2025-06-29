@@ -223,7 +223,7 @@ export default function Home() {
                   <SboxTag />
                   <CSharpTag />
                 </div>
-                <p>A Small entrying I did for the S&Box Game Jam #1</p>
+                <p>A Small entry I did for the S&Box Game Jam #1</p>
               </div>
               <div
                 className={styles.card}
