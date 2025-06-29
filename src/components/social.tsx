@@ -81,3 +81,11 @@ export function StatusQuoLink({ link, size = 30 }: { link: string, size?: number
         </a>
     );
 }
+
+export function SboxIcon({ link, size = 30 }: { link: string, size?: number}) {
+    return (
+        <a data-no-blobity href={link} target="_blank">
+            <img src="/sbox-logo-square.svg" alt="sbox" width={size} height={size} />
+        </a>
+    );
+}

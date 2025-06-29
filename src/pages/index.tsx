@@ -6,15 +6,18 @@ import { useEffect, useRef, useState } from "react";
 import useBlobity from "blobity/lib/react/useBlobity";
 
 import {
+  CSharpTag,
   CurrentTeamTag,
   DiscontinuedTag,
   GoTag,
   JavaTag,
   NextJsTag,
+  PostgresTag,
   PythonTag,
   QwikTag,
   ReactNativeTag,
   RustTag,
+  SboxTag,
   TauriTag,
   TypeScriptTag,
   UnrealTag,
@@ -26,6 +29,7 @@ import {
   EmailLink,
   GithubLink,
   LiquipediaLink,
+  SboxIcon,
   StatusQuoLink,
   TemprLink,
   TwitterLink,
@@ -132,7 +136,7 @@ export default function Home() {
               data-blobity
               className={styles.subtitle}
             >
-              I make things <span className={styles.sometimes}>sometimes</span>
+              I make things sometimes
             </p>
             <p
               data-blobity-magnetic={false}
@@ -189,7 +193,48 @@ export default function Home() {
                 onMouseEnter={() => switchingColors()}
                 onMouseLeave={() => switchingColorsBack()}
               >
-                <h1>Apex Utils</h1>
+                <h1>
+                  Apex Utils
+                  <ApexUtilsIcon link="https://apex-utils.catsonluna.com" />
+                </h1>
+                <div className={styles.tags}>
+                  <RustTag />
+                  <TypeScriptTag />
+                  <QwikTag />
+                  <PostgresTag />
+                </div>
+                <p>
+                  Replacing every old tool, by combining them all into a single web application, Apex Utils now
+                  contains free, pro and team tools, all on one site.
+                </p>
+              </div>
+              <div
+                className={styles.card}
+                data-blobity={true}
+                data-blobity-magnetic={false}
+                onMouseEnter={() => switchingColors()}
+                onMouseLeave={() => switchingColorsBack()}
+              >
+                <h1>
+                  Statue Of Me
+                  <SboxIcon link="https://sbox.game/catsonluna/statue_of_me" />
+                </h1>
+                <div className={styles.tags}>
+                  <SboxTag />
+                  <CSharpTag />
+                </div>
+                <p>A Small entrying I did for the S&Box Game Jam #1</p>
+              </div>
+              <div
+                className={styles.card}
+                data-blobity={true}
+                data-blobity-magnetic={false}
+                onMouseEnter={() => switchingColors()}
+                onMouseLeave={() => switchingColorsBack()}
+              >
+                <h1>
+                  Apex Utils Desktop
+                </h1>
                 <div className={styles.tags}>
                   <RustTag />
                   <TypeScriptTag />
@@ -213,18 +258,15 @@ export default function Home() {
                 onMouseEnter={() => switchingColors()}
                 onMouseLeave={() => switchingColorsBack()}
               >
-                <h1>
-                  Apex Utils Pro
-                  <ApexUtilsIcon link="https://apex-utils-pro.catsonluna.com" />
-                </h1>
+                <h1>Apex Utils Pro</h1>
                 <div className={styles.tags}>
                   <RustTag />
                   <TypeScriptTag />
                   <QwikTag />
                 </div>
                 <p>
-                  Apex Utils Pro is a web application, with a mix of paid,
-                  and team only tools.
+                  Apex Utils Pro is a web application, with a mix of paid, and
+                  team only tools.
                 </p>
               </div>
               <div
@@ -234,10 +276,7 @@ export default function Home() {
                 onMouseEnter={() => switchingColors()}
                 onMouseLeave={() => switchingColorsBack()}
               >
-                <h1>
-                  Apex Utils Web
-                  <ApexUtilsIcon link="https://apex-utils.catsonluna.com" />
-                </h1>
+                <h1>Apex Utils Web</h1>
                 <div className={styles.tags}>
                   <RustTag />
                   <TypeScriptTag />
@@ -376,6 +415,13 @@ export default function Home() {
                 <div className={`${styles.embla__slide} ${tagStyles.unreal}`}>
                   Unreal Engine
                 </div>
+
+                <div className={`${styles.embla__slide} ${tagStyles.qwik}`}>
+                  Qwik
+                </div>
+                <div className={`${styles.embla__slide} ${tagStyles.sbox}`}>
+                  S&Box
+                </div>
               </div>
             </div>
           </div>
@@ -403,31 +449,9 @@ export default function Home() {
                 onMouseLeave={() => switchingColorsBack()}
               >
                 <h1>
-                  Cloud9 <Cloud9Link link="https://www.cloud9.gg/" />
-                </h1>
-                <p>
-                  Worked with Cloud9 throught ALGS Year 4, creating analytical
-                  software, placing 6th split 1 lan, 17th split 2 lan, and 26th
-                  in the Championship
-                </p>
-              </div>
-              <div
-                className={styles.card}
-                data-blobity={true}
-                data-blobity-magnetic={false}
-                onMouseEnter={() => switchingColors()}
-                onMouseLeave={() => switchingColorsBack()}
-              >
-                <h1>
                   Tempr <TemprLink link="https://linktr.ee/temprgg" />{" "}
                 </h1>
-                <div className={styles.tags}>
-                  <CurrentTeamTag />
-                </div>
-                <p>
-                  Currently working with Tempr, going to the ALGS Open Lan in
-                  New Orleans.
-                </p>
+                <p>Attended the ALGS Open Lan in New Orleans with Tempr.</p>
               </div>
               <div
                 className={styles.card}
@@ -440,7 +464,24 @@ export default function Home() {
                   Status Quo <StatusQuoLink link="https://statusquo.gg/" />
                 </h1>
                 <p>
-                  Worked with Status Quo during ALGS Year 5 PSQ's, achiving 8th in week 1 finals
+                  Worked with Status Quo during ALGS Year 5 PSQ's, achiving 8th
+                  in week 1 finals
+                </p>
+              </div>
+              <div
+                className={styles.card}
+                data-blobity={true}
+                data-blobity-magnetic={false}
+                onMouseEnter={() => switchingColors()}
+                onMouseLeave={() => switchingColorsBack()}
+              >
+                <h1>
+                  Cloud9 <Cloud9Link link="https://www.cloud9.gg/" />
+                </h1>
+                <p>
+                  Worked with Cloud9 throught ALGS Year 4, creating analytical
+                  software, placing 6th split 1 lan, 17th split 2 lan, and 26th
+                  in the Championship
                 </p>
               </div>
             </div>

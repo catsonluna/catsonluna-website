@@ -104,3 +104,27 @@ export function QwikTag() {
     </div>
   );
 }
+
+export function SboxTag() {
+  return (
+        <div className={`${styles.tag} ${styles.sbox}`}>
+      S&Box
+    </div>
+  )
+}
+
+export function CSharpTag(){
+    return (
+        <div className={`${styles.tag} ${styles.csharp}`}>
+      C#
+    </div>
+  )
+}
+
+export function PostgresTag(){
+      return (
+        <div className={`${styles.tag} ${styles.postgresql}`}>
+      PostgreSQL
+    </div>
+      )
+}

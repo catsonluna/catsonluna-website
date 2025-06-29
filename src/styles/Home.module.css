@@ -184,6 +184,14 @@
   .team__cards {
     grid-template-columns: repeat(1, 1fr);
   }
+  
+  .team__cards .card:nth-child(1) {
+    order: 2;
+  }
+  
+  .team__cards .card:nth-child(2) {
+    order: 1;
+  }
 
 
   .section_title {
@@ -192,7 +200,6 @@
 
   .card {
     max-width: 90vw;
-    /* center everythign */
     display: flex;
     flex-direction: column;
     justify-content: center;
